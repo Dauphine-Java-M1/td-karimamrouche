@@ -1,4 +1,6 @@
-package fr.dauphine.ja.amrouchekarim.shapes;
+package fr.dauphine.ja.amrouchekarim.model;
+
+import fr.dauphine.ja.amrouchekarim.view.Drawable_ring;
 
 public class Ring extends Circle {
 
@@ -7,6 +9,7 @@ public class Ring extends Circle {
 	public Ring(Point point, int rayon, int rayon_interne) {
 		super(point, rayon);
 		this.rayon_interne = rayon_interne;
+		this.drawer = new Drawable_ring(this);
 	}
 
 	@Override

@@ -1,15 +1,17 @@
-package fr.dauphine.ja.amrouchekarim.shapes;
+package fr.dauphine.ja.amrouchekarim.model;
 
+import java.awt.Graphics;
 import java.util.LinkedList;
 
-import sun.security.action.GetLongAction;
+import fr.dauphine.ja.amrouchekarim.view.Drawable_line;
 
-public class LigneBrise {
+public class LigneBrise extends Shape {
 	private LinkedList<Point> l;
 
-	public LigneBrise(int taille) {
+	public LigneBrise(Point point) {
+		super(point);
 		this.l = new LinkedList<>();
-
+		this.drawer = new Drawable_line(this);
 	}
 
 	public void setL(LinkedList<Point> l) {

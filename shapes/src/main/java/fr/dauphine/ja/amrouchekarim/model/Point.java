@@ -1,8 +1,12 @@
-package fr.dauphine.ja.amrouchekarim.shapes;
+package fr.dauphine.ja.amrouchekarim.model;
 
-public class Point {
+public class Point  {
 	private int x, y;
 	private static int number = 0;
+
+	public static int getNumber() {
+		return number;
+	}
 
 	public int getX() {
 		return x;

@@ -1,21 +1,11 @@
-package fr.dauphine.ja.amrouchekarim.shapes;
+package fr.dauphine.ja.amrouchekarim.model;
 
-import java.awt.Graphics;
-
-import org.omg.CORBA.PUBLIC_MEMBER;
-
-//import view.Drawable;
-//import view.Drawable_cercle;
+import fr.dauphine.ja.amrouchekarim.view.Drawable_cercle;
 
 public class Circle extends Shape {
 
 	public int rayon;
 
-//	public Circle() {
-//		this.drawer = new Drawable_cercle(this);
-//		System.out.println("sss"+drawer);
-//	}
-	
 	public int getRayon() {
 		return rayon;
 	}
@@ -26,7 +16,7 @@ public class Circle extends Shape {
 
 	public Circle(Point point, int rayon) {
 		super(point);
-//		this.drawer = new Drawable_cercle(this);
+		this.drawer = new Drawable_cercle(this);
 		this.rayon = rayon;
 	}
 
@@ -51,17 +41,5 @@ public class Circle extends Shape {
 		// TODO Auto-generated method stub
 		return this.getCenter().equals(c.getCenter()) && this.rayon == c.rayon;
 	}
-
-//	@Override
-//	public void draw(Graphics g) {
-//		// TODO Auto-generated method stub
-//		
-//	}
-
-
-
-
-
-	
 
 }
