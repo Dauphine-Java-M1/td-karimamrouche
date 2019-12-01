@@ -24,6 +24,7 @@ public class PrimeCollection {
 
 	public boolean isPrime(Integer p) {
 		boolean r = true;
+		if(p<1) return false;
 		for (float x = 2; x < Math.sqrt(p); x++)
 			if (p % x == 0)
 				r = false;
