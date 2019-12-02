@@ -1,0 +1,3 @@
+Exercice 2 :
+-Le code ne compile pas car le méthode print prends en paramètre une liste de type <Object> et nous quand 
+on fait appel à celle ci on lui passe en paramètre une liste de string
