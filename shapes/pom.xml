@@ -32,7 +32,7 @@
 				<configuration>
 					<archive>
 						<manifest>
-						<mainClass>fr.dauphine.ja.amrouchekarim.shapes.Main</mainClass>
+						<mainClass>fr.dauphine.ja.amrouchekarim.model.Main</mainClass>
 		<addClasspath>true</addClasspath>
 	<classpathPrefix>lib</classpathPrefix>
 </manifest></archive></configuration></plugin></plugins></build>
