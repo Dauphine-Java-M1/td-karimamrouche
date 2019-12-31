@@ -1,0 +1,4 @@
+3- On doit implémenter l'interface iterable
+4- La classe AbstractList permet de créer une liste sans devoir implémenter toutes les méthodes nécessaires. Il faut cependant définir les méthodes
+ get() et size(), ces méthodes sont utiles pour pouvoir utiliser les autres méthodes prédéfinies 
+3 - Le problème est que la compléxité de linkedlist est trop grande.
